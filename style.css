@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+body{
+    min-height: 100vh;
+    background-color: #3ae374;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+    width: 900px;
+    height: 700px;
+    background-color: #F8EFBA;
+    box-shadow: 10px 8px 10px  #000;
+    
+}
+.container .header{
+    width: 100%;
+    height: 80px;
+    background-color: #25CCF7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .left
+{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.header img{
+    width: 70px;
+    height: 70px;
+}
+
+.container-body{
+   width: 100%;
+    height: 80%;
+    position: relative;
+    display: flex;
+    
+}
+h2{
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+
+   
+}
+.left-section{
+    height: 100%;
+    width: 50%;
+   
+    position: absolute;
+}
+.container-body .left-section
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    border-right: 1px solid gray;
+
+   
+}
+
+.input-sec
+{
+    width: 300px;
+    height: 200px;
+    /* background-color: #25CCF7; */
+    position: relative;
+    display: flex;
+    align-items: center;
+  justify-content: center;
+    flex-direction: column;
+    
+}
+.input-sec input{
+    width: 100%;
+    height: 70px;
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 2px solid orange;
+    font-size: 30px;
+    text-align: center;
+  
+    
+
+   
+}
+input::placeholder
+{
+    font-size: 20px;
+    padding-left: 20px;
+    color: rgba(0,0,0,0.5);
+}
+button{
+    width: 100%;
+    height: 50px;
+   position: absolute;
+   bottom: 10px;
+   color: #fff;
+   background: orangered;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .4s;
+   
+    
+}
+button:hover{
+    background-color: indigo;
+}
+input ~label
+{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    font-size: 25px;
+    color: red;
+}
+input ~label::after{
+    content: ':';
+    padding-left: 10px;
+}
+
+/* right section */
+
+.right-section{
+    width: 50%;
+    height: 100%;
+}
+
+.right-section .card
+{
+    width: 300px;
+    height: 450px;
+    background-color: rgb(212, 207, 207);
+    position: absolute;
+    right: 70px;
+    top: 30px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center
+    
+}
+h3#heading{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+    color: orangered;
+    
+}
+.card #place{
+    font-size: 30px;
+
+}
+.card #temp{
+    font-size: 90px;
+
+}
+.card #info-rain{
+    font-size: 15px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    color: green;
+
+}
+#refresh
+{
+    width: 70%;
+    height: 50px;
+   position: absolute;
+   bottom:70px;
+   color: #fff;
+   background: orangered;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
